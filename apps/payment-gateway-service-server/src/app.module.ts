@@ -4,6 +4,8 @@ import { SmsModule } from "./sms/sms.module";
 import { UserModule } from "./user/user.module";
 import { CurrencyModule } from "./currency/currency.module";
 import { PaymentMethodModule } from "./paymentMethod/paymentMethod.module";
+import { AdminModule } from "./admin/admin.module";
+import { MerchantModule } from "./merchant/merchant.module";
 import { HealthModule } from "./health/health.module";
 import { PrismaModule } from "./prisma/prisma.module";
 import { SecretsManagerModule } from "./providers/secrets/secretsManager.module";
@@ -21,6 +23,8 @@ import { ApolloDriver, ApolloDriverConfig } from "@nestjs/apollo";
     UserModule,
     CurrencyModule,
     PaymentMethodModule,
+    AdminModule,
+    MerchantModule,
     HealthModule,
     PrismaModule,
     SecretsManagerModule,

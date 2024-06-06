@@ -66,6 +66,22 @@ model PaymentMethod {
   updatedAt    DateTime  @updatedAt
 }
 
+model Admin {
+  createdAt DateTime @default(now())
+  email     String?
+  id        String   @id @default(cuid())
+  updatedAt DateTime @updatedAt
+  username  String?
+}
+
+model Merchant {
+  createdAt DateTime @default(now())
+  email     String?
+  id        String   @id @default(cuid())
+  updatedAt DateTime @updatedAt
+  username  String?
+}
+
 enum EnumPaymentStatus {
   Option1
 }

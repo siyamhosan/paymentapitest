@@ -25,6 +25,14 @@ import { PaymentMethodList } from "./paymentMethod/PaymentMethodList";
 import { PaymentMethodCreate } from "./paymentMethod/PaymentMethodCreate";
 import { PaymentMethodEdit } from "./paymentMethod/PaymentMethodEdit";
 import { PaymentMethodShow } from "./paymentMethod/PaymentMethodShow";
+import { AdminList } from "./admin/AdminList";
+import { AdminCreate } from "./admin/AdminCreate";
+import { AdminEdit } from "./admin/AdminEdit";
+import { AdminShow } from "./admin/AdminShow";
+import { MerchantList } from "./merchant/MerchantList";
+import { MerchantCreate } from "./merchant/MerchantCreate";
+import { MerchantEdit } from "./merchant/MerchantEdit";
+import { MerchantShow } from "./merchant/MerchantShow";
 import { jwtAuthProvider } from "./auth-provider/ra-auth-jwt";
 
 const App = (): React.ReactElement => {
@@ -85,6 +93,20 @@ const App = (): React.ReactElement => {
           edit={PaymentMethodEdit}
           create={PaymentMethodCreate}
           show={PaymentMethodShow}
+        />
+        <Resource
+          name="Admin"
+          list={AdminList}
+          edit={AdminEdit}
+          create={AdminCreate}
+          show={AdminShow}
+        />
+        <Resource
+          name="Merchant"
+          list={MerchantList}
+          edit={MerchantEdit}
+          create={MerchantCreate}
+          show={MerchantShow}
         />
       </Admin>
     </div>
